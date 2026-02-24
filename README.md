@@ -1,6 +1,6 @@
  Logistics Delivery Time Prediction System
 <p align="center"> <b>Multivariate Linear Regression model predicting e-commerce delivery time using real-world logistics data.</b><br> Built from scratch using Gradient Descent and compared with Scikit-Learn implementation. </p>
-📌 Project Overview
+ Project Overview
 This project builds a machine learning regression system to predict the number of days required to deliver an e-commerce order.
 
 It follows a complete end-to-end ML pipeline:
@@ -21,7 +21,7 @@ Model persistence
 
 This project demonstrates applied machine learning on noisy real-world logistics data.
 
-🎯 Problem Statement
+ Problem Statement
 Predict:
 
 Delivery Time (in days)
@@ -36,7 +36,7 @@ Optimize operational efficiency
 
 Enhance customer satisfaction
 
-📊 Dataset
+ Dataset
 Dataset used:
 Brazilian E-Commerce Public Dataset by Olist
 Source: Kaggle
@@ -54,7 +54,7 @@ olist_customers_dataset.csv
 Download from Kaggle and place inside:
 
 data/raw/
-🏗 Project Structure
+ Project Structure
 logistics-delivery-prediction/
 │
 ├── data/
@@ -75,7 +75,7 @@ logistics-delivery-prediction/
 └── README.md
 The project follows modular architecture for clean separation of responsibilities.
 
-⚙️ Feature Engineering
+ Feature Engineering
 Features used:
 
 Product price
@@ -103,8 +103,8 @@ Applied one-hot encoding
 
 Performed feature scaling
 
-🧠 Model Implementation
-1️⃣ Linear Regression (From Scratch)
+ Model Implementation
+1️ Linear Regression (From Scratch)
 Implemented using:
 
 Hypothesis function
@@ -153,7 +153,7 @@ pred
  −y) 
 2
  
-2️⃣ Scikit-Learn Linear Regression
+2️ Scikit-Learn Linear Regression
 Used for:
 
 Model comparison
@@ -165,13 +165,13 @@ Model persistence
 Saved model file:
 
 models/linear_regression_model.pkl
-📈 Model Performance
+Model Performance
 Results on test dataset:
 
 MSE: 69.71
 MAE: 5.49
 R2 Score: 0.19
-📌 Interpretation
+ Interpretation
 Average prediction error ≈ 5.5 days
 
 R² reflects real-world noisy logistics data
@@ -180,7 +180,7 @@ Model captures part of the delivery time variability
 
 This demonstrates realistic behavior of linear regression on complex operational data.
 
-📊 Visualizations
+ Visualizations
 🔹 Cost Convergence (Gradient Descent)
 <p align="center"> <img src="reports/cost_convergence.png" width="600"/> </p>
 This plot shows how the cost decreases over iterations, confirming proper optimization.
@@ -189,17 +189,17 @@ This plot shows how the cost decreases over iterations, confirming proper optimi
 <p align="center"> <img src="reports/prediction_plot.png" width="600"/> </p>
 This scatter plot compares actual delivery days vs predicted values.
 
-🚀 How To Run The Project
-1️⃣ Clone repository
+ How To Run The Project
+1️ Clone repository
 git clone <your_repo_link>
 cd logistics-delivery-prediction
-2️⃣ Install dependencies
+2️ Install dependencies
 pip install -r requirements.txt
-3️⃣ Download dataset from Kaggle
+3️ Download dataset from Kaggle
 Place required CSV files inside:
 
 data/raw/
-4️⃣ Run the project
+4️ Run the project
 python main.py
 Outputs:
 
@@ -209,7 +209,7 @@ Trained model saved in models/
 
 Plots saved in reports/
 
-💡 Business Impact
+ Business Impact
 This system can help:
 
 Estimate delivery timelines
@@ -231,7 +231,7 @@ Try Ridge / Lasso regression
 
 Deploy as a web application
 
-🏆 Key Skills Demonstrated
+ Key Skills Demonstrated
 End-to-end ML pipeline design
 
 Multivariate regression
